@@ -160,6 +160,29 @@
 </script>
 </html>
 
+<script>
+// Capture booking details from URL
+const params = new URLSearchParams(window.location.search);
+const checkin = params.get("checkin");
+const checkout = params.get("checkout");
+const adults = params.get("adults");
+const children = params.get("children");
+const rooms = params.get("rooms");
+
+// When user selects a room
+document.querySelectorAll(".select-room").forEach(button => {
+  button.addEventListener("click", function() {
+    const roomName = this.getAttribute("data-room");
+    const price = this.getAttribute("data-price");
+
+    // Show confirmation (you can replace with modal or redirect to "thank you" page)
+    alert(
+      `Booking Confirmed!\n\nRoom: ${roomName}\nPrice: ₱${price}/night\nCheck-in: ${checkin}\nCheck-out: ${checkout}\nAdults: ${adults}\nChildren: ${children}\nRooms: ${rooms}`
+    );
+  });
+});
+</script>
+
 
 
 

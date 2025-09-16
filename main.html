@@ -92,8 +92,9 @@
             </div>
 
             <!-- Button -->
-            <div class="col-md-2 d-flex align-items-end">
-              <a href="room.html" class="btn btn-warning w-100 fw-bold">Book Now</a>
+            
+              <div class="col-md-2 d-flex align-items-end">
+              <button type="submit" class="btn btn-warning w-100 fw-bold">Book Now</button>
             </div>
           </form>
         </div>
@@ -260,5 +261,26 @@
     }, 500);
   });
 </script>
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // Get values
+  const checkin = document.getElementById("checkin").value;
+  const checkout = document.getElementById("checkout").value;
+  const adults = document.getElementById("adults").value;
+  const children = document.getElementById("children").value;
+  const rooms = document.getElementById("rooms").value;
+
+  // Build URL with query params
+  const url = `room.html?checkin=${checkin}&checkout=${checkout}&adults=${adults}&children=${children}&rooms=${rooms}`;
+
+  // Redirect
+  window.location.href = url;
+});
+</script>
+
 </body>
 </html>
+
+
