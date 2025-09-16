@@ -3,8 +3,13 @@
       background-color: #fff;
     }
     .navbar-dark {
-      background: #0d1b2a !important;
+      background: #d073ec !important;
     }
+    .navbar-brand{
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+    }
+    
     .hero-section {
       background: url('assets/hotel-main.jpg') center/cover no-repeat;
       height: 80vh;
