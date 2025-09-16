@@ -6,12 +6,12 @@
       background: #d073ec !important;
     }
     .navbar-brand{
-      color: rgb(255, 255, 255);
+      color: black;
       font-weight: bold;
     }
     
     .hero-section {
-      background: url('assets/hotel-main.jpg') center/cover no-repeat;
+      background: url('assets/Okada_2.jpg') center/cover no-repeat;
       height: 80vh;
       display: flex;
       align-items: center;
