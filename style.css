@@ -95,14 +95,22 @@
     }
     .booking-section .form-control,
     .booking-section .form-select {
-        border: 1px solid #f0ad4e; /* Gold border */
+        border: 1px solid #b838a5; /* Gold border */
         border-radius: 8px;
+
     }
 
-    .booking-section .btn-warning:hover {
-        background-color: #090870; /* Dark blue button */
-        color: gold;
+    .booking-section .btn-warning {
+        background-color: #b838a5; /* Dark blue button */
+        color: rgb(255, 255, 255);
         border: none;
+         transition: all 0.3s ease;
+    }
+    .booking-section .btn-warning:hover {
+        background-color: #ee73db; /* Dark blue button */
+        color: rgb(255, 255, 255);
+        border: none;
+         transform: scale(1.05);
     }
     .bg-darkblue {
         background-color: darkblue !important;
