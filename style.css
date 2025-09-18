@@ -5,13 +5,9 @@
     .navbar-dark {
       background: #d073ec !important;
     }
-    .navbar-brand{
-      color: black;
-      font-weight: bold;
-    }
-    
+   
     .hero-section {
-      background: url('assets/Okada_2.jpg') center/cover no-repeat;
+      background: url('assets/Y2_img1.webp') center/cover no-repeat;
       height: 80vh;
       display: flex;
       align-items: center;
@@ -95,19 +91,20 @@
     }
     .booking-section .form-control,
     .booking-section .form-select {
-        border: 1px solid #b838a5; /* Gold border */
+        border: 1px solid rgba(26, 26, 26, 1); 
         border-radius: 8px;
 
     }
 
     .booking-section .btn-warning {
-        background-color: #b838a5; /* Dark blue button */
+        background-color: rgba(26, 26, 26, 1); 
         color: rgb(255, 255, 255);
         border: none;
          transition: all 0.3s ease;
     }
     .booking-section .btn-warning:hover {
-        background-color: #ee73db; /* Dark blue button */
+        background-color: rgba(26, 26, 26, 0.8); 
+        color: rgb(255, 255, 255);
         color: rgb(255, 255, 255);
         border: none;
          transform: scale(1.05);
