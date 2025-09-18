@@ -28,7 +28,8 @@
           <div class="card-body">
             <h5 class="card-title">Family Room</h5>
             <p class="card-text">⭐⭐⭐⭐⭐</p>
-            <p>$50 / per night</p>
+            <p>₱5000 / per night</p>
+            <button class="btn btn-warning w-100 select-room" data-room="Family Room" data-price="5000">Select Room</button>
           </div>
         </div>
       </div>
@@ -40,7 +41,8 @@
           <div class="card-body">
             <h5 class="card-title">Double Room</h5>
             <p class="card-text">⭐⭐⭐⭐⭐</p>
-            <p>$29 / per night</p>
+            <p>₱2900 / per night</p>
+              <button class="btn btn-warning w-100 select-room" data-room="Family Room" data-price="5000">Select Room</button>
           </div>
         </div>
       </div>
@@ -52,7 +54,8 @@
           <div class="card-body">
             <h5 class="card-title">Superior Room</h5>
             <p class="card-text">⭐⭐⭐⭐⭐</p>
-            <p>$50 / per night</p>
+            <p>₱5000 / per night</p>
+              <button class="btn btn-warning w-100 select-room" data-room="Family Room" data-price="5000">Select Room</button>
           </div>
         </div>
       </div>
@@ -64,7 +67,8 @@
           <div class="card-body">
             <h5 class="card-title">Deluxe Room</h5>
             <p class="card-text">⭐⭐⭐⭐⭐</p>
-            <p>$55 / per night</p>
+            <p>₱5500 / per night</p>
+              <button class="btn btn-warning w-100 select-room" data-room="Family Room" data-price="5000">Select Room</button>
           </div>
         </div>
       </div>
@@ -76,7 +80,8 @@
           <div class="card-body">
             <h5 class="card-title">Classic Balcony Room</h5>
             <p class="card-text">⭐⭐⭐⭐⭐</p>
-            <p>$25 / per night</p>
+            <p>₱2500 / per night</p>
+              <button class="btn btn-warning w-100 select-room" data-room="Family Room" data-price="5000">Select Room</button>
           </div>
         </div>
       </div>
@@ -88,7 +93,8 @@
           <div class="card-body">
             <h5 class="card-title">Deluxe Double Room</h5>
             <p class="card-text">⭐⭐⭐⭐⭐</p>
-            <p>$150 / per night</p>
+            <p>₱1500 / per night</p>
+              <button class="btn btn-warning w-100 select-room" data-room="Family Room" data-price="5000">Select Room</button>
           </div>
         </div>
       </div>
@@ -153,6 +159,29 @@
   });
 </script>
 </html>
+
+<script>
+// Capture booking details from URL
+const params = new URLSearchParams(window.location.search);
+const checkin = params.get("checkin");
+const checkout = params.get("checkout");
+const adults = params.get("adults");
+const children = params.get("children");
+const rooms = params.get("rooms");
+
+// When user selects a room
+document.querySelectorAll(".select-room").forEach(button => {
+  button.addEventListener("click", function() {
+    const roomName = this.getAttribute("data-room");
+    const price = this.getAttribute("data-price");
+
+    // Show confirmation (you can replace with modal or redirect to "thank you" page)
+    alert(
+      `Booking Confirmed!\n\nRoom: ${roomName}\nPrice: ₱${price}/night\nCheck-in: ${checkin}\nCheck-out: ${checkout}\nAdults: ${adults}\nChildren: ${children}\nRooms: ${rooms}`
+    );
+  });
+});
+</script>
 
 
 
