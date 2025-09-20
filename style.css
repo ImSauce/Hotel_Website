@@ -44,6 +44,31 @@ body {
   position: relative;
 }
 
+.hero-section1 {
+  background: url("assets/images/Y2_Contact_Hero.webp") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 26, 26, 0.6);
+  z-index: 0;
+}
+
+.hero-section1 > * {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-section::before {
   content: "";
   position: absolute;
