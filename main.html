@@ -4,27 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Y2 Residence Hotel</title>
-  <link rel = "icon" href = "assets/logo.jpg" type = "image/x-icon">
+  <link rel = "icon" href = "assets/images/Head_Logo.png" type = "image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href = "style.css" rel="stylesheet">
 </head>
 <body>
+  <div id="loader">
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid justify-content-center">
        <a class="navbar-brand" href="index.html">
-        <img src="assets/Y2_Logo_White.svg" alt="Okada Logo" height="100">
+        <img src="assets/images/Y2_Logo_White.svg" alt="Okada Logo" height="100">
         </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="color: rgb(219, 101, 213); font-size: 24px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="font-size: 24px;">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-         <li class="nav-item"><a class="nav-link" href="main.html"><i class="fas fa-home"></i> Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="main.html" style="color: #c4942d"><i class="fas fa-home"></i> Home</a></li>
           <li class="nav-item"><a class="nav-link" href="room.html"><i class="fas fa-bed"></i> Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-phone" aria-hidden="true"></i> Contact</a></li>
         </ul>
       </div>
     </div>
@@ -109,13 +114,12 @@
       <!-- Left Side: Image -->
       <div class="col-lg-6 position-relative mb-4 mb-lg-0">
         <div class="position-relative">
-          <img src="assets/delux-double.jpg" alt="Reception" class="img-fluid rounded shadow">
+          <img src="assets/images/Y2_LivingRoom.webp" alt="Reception" class="img-fluid rounded shadow">
           <!-- Overlay Box -->
           <div class="position-absolute bottom-0 start-0 bg-dark text-white p-3 rounded shadow" style="transform: translate(20px, 20px);">
             <h5 class="m-0 fw-bold">25 Years of Service Experience</h5>
           </div>
-          <!-- Background Accent -->
-          <div class="position-absolute top-0 end-0" style="width: 120px; height: 120px; background-color:#b838a5; border-radius: 50px; transform: translate(30%, -30%); z-index:-1;"></div>  
+         
         </div>
       </div>
 
@@ -146,7 +150,7 @@
       <!-- IMAGE RIGHT -->
       <div class="col-lg-6 text-center">
         <div class="position-relative">
-          <img src="assets/Okada_2.jpg" class="img-fluid rounded shadow" alt="Dining Area">
+          <img src="assets/images/Y2_DiningArea.jpg" class="img-fluid rounded shadow" alt="Dining Area"> 
           </div>
         </div>
       </div>
@@ -161,9 +165,7 @@
       <!-- Left Side: Image -->
       <div class="col-lg-6 position-relative mb-4 mb-lg-0">
         <div class="position-relative">
-          <img src="assets/Pool_Okada.jpg" alt="Swimming Pool" class="img-fluid shadow rounded">
-          <!-- Background Accent -->
-          <div class="position-absolute top-0 end-0" style="width: 120px; height: 120px; background-color:#b838a5; border-radius: 50px; transform: translate(30%, -30%); z-index:-1;"></div>
+          <img src="assets/images/Y2_SwimmingPool2.jpg" alt="Swimming Pool" class="img-fluid shadow rounded">
         </div>
       </div>
 
@@ -194,7 +196,7 @@
       <!-- IMAGE RIGHT -->
       <div class="col-lg-6 text-center">
         <div class="position-relative">
-          <img src="assets/Spa_Okada.png" class="img-fluid rounded shadow" alt="Spa">
+          <img src="assets/images/Y2_Spa.jpg" class="img-fluid rounded shadow" alt="Spa">
           </div>
         </div>
       </div>
@@ -203,13 +205,13 @@
 </section>
 
   <!-- Footer -->
-<footer class="text-light pt-5 pb-3" style="background-color: #000000;">
+<footer class="text-light pt-5 pb-3" style="background-color: #1A1A1A;">
   <div class="container">
     <div class="row">
       
       <!-- Brand and Social -->
       <div class="col-md-3 mb-4">
-        <h4 class="fw-bold " style="color: #dcb764;">Residence Hotel</h4>
+        <img src="assets/Y2_Logo_White.svg" alt="">
         <div class="d-flex gap-3 my-3">
           <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
           <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>

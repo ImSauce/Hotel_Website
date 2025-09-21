@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Chocolate";
+  src: url(assets/fonts/painting-with-chocolate.regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -27,7 +34,7 @@ body {
 }
 
 .hero-section {
-  background: url("assets/Y2_img1.webp") center/cover no-repeat;
+  background: url("assets/images/Y2_img1.webp") center/cover no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -35,6 +42,31 @@ body {
   color: white;
   text-align: center;
   position: relative;
+}
+
+.hero-section1 {
+  background: url("assets/images/Y2_Contact_Hero.webp") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 26, 26, 0.6);
+  z-index: 0;
+}
+
+.hero-section1 > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-section::before {
