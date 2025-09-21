@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Y2 Residence Hotel</title>
-  <link rel = "icon" href = "assets/images/Head_Logo.png" type = "image/x-icon">
+  <link rel="icon" href="assets/images/Head_Logo.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href = "style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
   <div id="loader">
-      <div class="spinner-border text-warning" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
+  </div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid justify-content-center">
-       <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="index.html">
         <img src="assets/images/Y2_Logo_White.svg" alt="Okada Logo" height="100">
-        </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="font-size: 24px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        style="font-size: 24px;">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-         <li class="nav-item"><a class="nav-link" href="main.html" style="color: #c4942d"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="main.html" style="color: #c4942d"><i class="fas fa-home"></i>
+              Home</a></li>
           <li class="nav-item"><a class="nav-link" href="room.html"><i class="fas fa-bed"></i> Rooms</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-camera"></i> Gallery</a></li>
         </ul>
       </div>
     </div>
@@ -44,245 +48,259 @@
   </section>
 
   <section class="booking-section py-4">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="bg-white p-4 rounded shadow">
-          <form class="row g-3">
-            <!-- Check In Date -->
-            <div class="col-md-2">
-              <label for="checkin" class="form-label fw-bold">Check In Date:</label>
-              <input type="date" id="checkin" class="form-control">
-            </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="bg-white p-4 rounded shadow">
+            <form class="row g-3">
+              <!-- Check In Date -->
+              <div class="col-md-2">
+                <label for="checkin" class="form-label fw-bold">Check In Date:</label>
+                <input type="date" id="checkin" class="form-control">
+              </div>
 
-            <!-- Check Out Date -->
-            <div class="col-md-2">
-              <label for="checkout" class="form-label fw-bold">Check Out Date:</label>
-              <input type="date" id="checkout" class="form-control">
-            </div>
+              <!-- Check Out Date -->
+              <div class="col-md-2">
+                <label for="checkout" class="form-label fw-bold">Check Out Date:</label>
+                <input type="date" id="checkout" class="form-control">
+              </div>
 
-            <!-- Adults -->
-            <div class="col-md-2">
-              <label for="adults" class="form-label fw-bold">Adults:</label>
-              <select id="adults" class="form-select">
-                <option>None</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-              </select>
-            </div>
+              <!-- Adults -->
+              <div class="col-md-2">
+                <label for="adults" class="form-label fw-bold">Adults:</label>
+                <select id="adults" class="form-select">
+                  <option>None</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4+</option>
+                </select>
+              </div>
 
-            <!-- Children -->
-            <div class="col-md-2">
-              <label for="children" class="form-label fw-bold">Children:</label>
-              <select id="children" class="form-select">
-                <option>None</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3+</option>
-              </select>
-            </div>
+              <!-- Children -->
+              <div class="col-md-2">
+                <label for="children" class="form-label fw-bold">Children:</label>
+                <select id="children" class="form-select">
+                  <option>None</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3+</option>
+                </select>
+              </div>
 
-            <!-- Rooms -->
-            <div class="col-md-2">
-              <label for="rooms" class="form-label fw-bold">Rooms:</label>
-              <select id="rooms" class="form-select">
-                <option>None</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-              </select>
-            </div>
+              <!-- Rooms -->
+              <div class="col-md-2">
+                <label for="rooms" class="form-label fw-bold">Rooms:</label>
+                <select id="rooms" class="form-select">
+                  <option>None</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4+</option>
+                </select>
+              </div>
 
-            <!-- Button -->
-            
+              <!-- Button -->
+
               <div class="col-md-2 d-flex align-items-end">
-              <button type="submit" class="btn btn-warning w-100 fw-bold">Book Now</button>
-            </div>
-          </form>
+                <button type="submit" class="btn btn-warning w-100 fw-bold">Book Now</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section class="py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left Side: Image -->
-      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
-        <div class="position-relative">
-          <img src="assets/images/Y2_LivingRoom.webp" alt="Reception" class="img-fluid rounded shadow">
-          <!-- Overlay Box -->
-          <div class="position-absolute bottom-0 start-0 bg-dark text-white p-3 rounded shadow" style="transform: translate(20px, 20px);">
-            <h5 class="m-0 fw-bold">25 Years of Service Experience</h5>
-          </div>
-         
-        </div>
-      </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Image -->
+        <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+          <div class="position-relative">
+            <img src="assets/images/Y2_LivingRoom.webp" alt="Reception" class="img-fluid rounded shadow">
+            <!-- Overlay Box -->
+            <div class="position-absolute bottom-0 start-0 bg-dark text-white p-3 rounded shadow"
+              style="transform: translate(20px, 20px);">
+              <h5 class="m-0 fw-bold">10 Years of Service Experience</h5>
+            </div>
 
-      <!-- Right Side: Text -->
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">About Residence Hotel</h2>
-        <p class="text-muted">
-         Residence Hotel Manila, a Forbes 5-star destination for six consecutive years in the Philippines and a Forbes VERIFIED Responsible Hospitality integrated resort, seamlessly blends unmatched hospitality, gaming, and entertainment across 30 breathtaking hectares. 
-        </p>
-        <p class="text-muted mb-4">
-          Our hotel is designed with your comfort in mind, offering a range of amenities to make your stay enjoyable.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- TEXT LEFT -->
-      <div class="col-lg-6">
-        <h2 class="mb-4">Dining Area</h2>
-        <p>With over 40 dining choices, Residence Hotel Manila serves up a diverse tapestry of beloved flavors from across the globe. From meticulously prepared Japanese sushi and handmade Italian pasta to intricate Shanghainese specialties, each dish showcases premium ingredients and a deep respect for culinary heritage.</p>
-        <p>Whether you're enjoying a leisurely breakfast or a romantic dinner, our dining area offers a warm and inviting atmosphere, complemented by exceptional service.</p>
-      </div>
-
-      <!-- IMAGE RIGHT -->
-      <div class="col-lg-6 text-center">
-        <div class="position-relative">
-          <img src="assets/images/Y2_DiningArea.jpg" class="img-fluid rounded shadow" alt="Dining Area"> 
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-
-<section class="py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left Side: Image -->
-      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
-        <div class="position-relative">
-          <img src="assets/images/Y2_SwimmingPool2.jpg" alt="Swimming Pool" class="img-fluid shadow rounded">
+        <!-- Right Side: Text -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">About Residence Hotel</h2>
+          <p class="text-muted">
+            Residence Hotel Manila, a Forbes 5-star destination for six consecutive years in the Philippines and a
+            Forbes VERIFIED Responsible Hospitality integrated resort, seamlessly blends unmatched hospitality, gaming,
+            and entertainment across 30 breathtaking hectares.
+          </p>
+          <p class="text-muted mb-4">
+            Our hotel is designed with your comfort in mind, offering a range of amenities to make your stay enjoyable.
+          </p>
         </div>
       </div>
-
-      <!-- Right Side: Text -->
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">Swimming Pool</h2>
-        <p class="text-muted">
-          Residence Hotel Manila features multiple luxurious swimming pools, including the outdoor Coral Wing Pool with scenic views of Manila Bay and the indoor, glass-domed Cove Manila Beach Club.
-        </p>
-        <p class="text-muted mb-4">
-          Whether you want to take a refreshing dip or lounge by the water, our pool area offers the perfect escape.
-        </p>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- TEXT LEFT -->
-      <div class="col-lg-6">
-        <h2 class="mb-4">The Retreat Spa</h2>
-        <p>It features ten ensuite treatment suites, a barbershop, beauty salon, nail art studio, dedicated relaxation zones, an outdoor relaxation pool, fitness center, tonic bar, aqua therapy facilities, and Southeast Asia’s first Wave Dream relaxation chamber. </p>
-        <p>Embracing both traditional and innovative wellness practices, The Retreat Spa introduces pioneering therapies such as Touchless Therapy, which redefines wellness through gentle, non-invasive techniques. </p>
-      </div>
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- TEXT LEFT -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">Dining Area</h2>
+          <p>With over 40 dining choices, Residence Hotel Manila serves up a diverse tapestry of beloved flavors from
+            across the globe. From meticulously prepared Japanese sushi and handmade Italian pasta to intricate
+            Shanghainese specialties, each dish showcases premium ingredients and a deep respect for culinary heritage.
+          </p>
+          <p>Whether you're enjoying a leisurely breakfast or a romantic dinner, our dining area offers a warm and
+            inviting atmosphere, complemented by exceptional service.</p>
+        </div>
 
-      <!-- IMAGE RIGHT -->
-      <div class="col-lg-6 text-center">
-        <div class="position-relative">
-          <img src="assets/images/Y2_Spa.jpg" class="img-fluid rounded shadow" alt="Spa">
+        <!-- IMAGE RIGHT -->
+        <div class="col-lg-6 text-center">
+          <div class="position-relative">
+            <img src="assets/images/Y2_DiningArea.jpg" class="img-fluid rounded shadow" alt="Dining Area">
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+    </div>
+  </section>
+
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Image -->
+        <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+          <div class="position-relative">
+            <img src="assets/images/Y2_SwimmingPool2.jpg" alt="Swimming Pool" class="img-fluid shadow rounded">
+          </div>
+        </div>
+
+        <!-- Right Side: Text -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Swimming Pool</h2>
+          <p class="text-muted">
+            Residence Hotel Manila features multiple luxurious swimming pools, including the outdoor Coral Wing Pool
+            with scenic views of Manila Bay and the indoor, glass-domed Cove Manila Beach Club.
+          </p>
+          <p class="text-muted mb-4">
+            Whether you want to take a refreshing dip or lounge by the water, our pool area offers the perfect escape.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- TEXT LEFT -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">The Retreat Spa</h2>
+          <p>It features ten ensuite treatment suites, a barbershop, beauty salon, nail art studio, dedicated relaxation
+            zones, an outdoor relaxation pool, fitness center, tonic bar, aqua therapy facilities, and Southeast Asia’s
+            first Wave Dream relaxation chamber. </p>
+          <p>Embracing both traditional and innovative wellness practices, The Retreat Spa introduces pioneering
+            therapies such as Touchless Therapy, which redefines wellness through gentle, non-invasive techniques. </p>
+        </div>
+
+        <!-- IMAGE RIGHT -->
+        <div class="col-lg-6 text-center">
+          <div class="position-relative">
+            <img src="assets/images/Y2_Spa.jpg" class="img-fluid rounded shadow" alt="Spa">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-<footer class="text-light pt-5 pb-3" style="background-color: #1A1A1A;">
-  <div class="container">
-    <div class="row">
-      
-      <!-- Brand and Social -->
-      <div class="col-md-3 mb-4">
-        <img src="assets/Y2_Logo_White.svg" alt="">
-        <div class="d-flex gap-3 my-3">
-          <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="text-light fs-5"><i class="bi bi-tiktok"></i></a>
-          <a href="#" class="text-light fs-5"><i class="bi bi-github"></i></a>
+  <footer class="text-light pt-5 pb-3" style="background-color: #000000">
+    <div class="container">
+      <div class="row">
+        <!-- Brand and Social -->
+        <div class="col-md-3 mb-4">
+          <img src="assets/images/Y2_Logo_White.svg" alt="" style="width: 200px" />
+          <div class="d-flex gap-3 my-3">
+            <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-light fs-5"><i class="bi bi-github"></i></a>
+          </div>
+          <p class="small">&copy; 2025 All rights reserved</p>
         </div>
-        <p class="small">&copy; 2025 All rights reserved</p>
-      </div>
 
-      <!-- Quick Links -->
-      <div class="col-md-3 mb-4">
-        <h5 class="fw-bold mb-3">Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-light text-decoration-none">About Residence Hotel</a></li>
-          <li><a href="room.html" class="text-light text-decoration-none">Our Best Rooms</a></li>
-        </ul>
-      </div>
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-light text-decoration-none">About Residence Hotel</a>
+            </li>
+            <li>
+              <a href="room.html" class="text-light text-decoration-none">Our Best Rooms</a>
+            </li>
+          </ul>
+        </div>
 
-      <!-- Reservations -->
-      <div class="col-md-3 mb-4">
-        <h5 class="fw-bold mb-3">Reservations</h5>
-        <p class="mb-1">Tel: 123 4567 8910</p>
-        <p class="mb-1">Email: residencehotel@gmail.com</p>
-      </div>
+        <!-- Reservations -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">Reservations</h5>
+          <p class="mb-1">Tel: 123 4567 8910</p>
+          <p class="mb-1">Email: residencehotel@gmail.com</p>
+        </div>
 
-      <!-- Location -->
-      <div class="col-md-3 mb-4">
-        <h5 class="fw-bold mb-3">Our Location</h5>
-        <p class="mb-1">938 Aurora Boulevard,</p>
-        <p class="mb-3">Cubao, Quezon City, Metro Manila</p>
-        <div class="input-group">
-          <input type="email" class="form-control" placeholder="Email Address">
-          <button class="btn btn-warning" style="background-color: #dcb764; border-color: #dcb764;"><i class="bi bi-send"></i></button>
+        <!-- Location -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold mb-3">Our Location</h5>
+          <p class="mb-1">938 Aurora Boulevard,</p>
+          <p class="mb-3">Cubao, Quezon City, Metro Manila</p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Email Address" />
+            <button class="btn btn-warning" style="background-color: #dcb764; border-color: #dcb764">
+              <i class="bi bi-send"></i>
+            </button>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("loaded");
-    setTimeout(() => {
-      document.getElementById("loader").style.display = "none";
-    }, 500);
-  });
-</script>
-<script>
-document.getElementById("bookingForm").addEventListener("submit", function(e) {
-  e.preventDefault();
+      document.body.classList.add("loaded");
+      setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+      }, 500);
+    });
+  </script>
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-  // Get values
-  const checkin = document.getElementById("checkin").value;
-  const checkout = document.getElementById("checkout").value;
-  const adults = document.getElementById("adults").value;
-  const children = document.getElementById("children").value;
-  const rooms = document.getElementById("rooms").value;
+      // Get values
+      const checkin = document.getElementById("checkin").value;
+      const checkout = document.getElementById("checkout").value;
+      const adults = document.getElementById("adults").value;
+      const children = document.getElementById("children").value;
+      const rooms = document.getElementById("rooms").value;
 
-  // Build URL with query params
-  const url = `room.html?checkin=${checkin}&checkout=${checkout}&adults=${adults}&children=${children}&rooms=${rooms}`;
+      // Build URL with query params
+      const url = `room.html?checkin=${checkin}&checkout=${checkout}&adults=${adults}&children=${children}&rooms=${rooms}`;
 
-  // Redirect
-  window.location.href = url;
-});
-</script>
+      // Redirect
+      window.location.href = url;
+    });
+  </script>
 
 </body>
+
 </html>
-
-
