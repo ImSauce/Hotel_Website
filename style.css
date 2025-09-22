@@ -69,6 +69,31 @@ body {
   z-index: 1;
 }
 
+.hero-section2 {
+  background: url("assets/images/Y2_Banner1.webp") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 26, 26, 0.6);
+  z-index: 0;
+}
+
+.hero-section2 > * {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-section::before {
   content: "";
   position: absolute;
@@ -78,14 +103,17 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .hero-content {
   position: relative;
   z-index: 2;
 }
+
 .hero-content h1 {
   font-size: 3rem;
   font-weight: bold;
 }
+
 .price-tag {
   background: #f7a11b;
   color: #fff;
@@ -96,17 +124,21 @@ body {
   right: 15px;
   border-radius: 5px;
 }
+
 .room-card img {
   height: 220px;
   object-fit: cover;
 }
+
 .navbar-dark .nav-link:hover {
   color: rgb(0, 0, 0);
   margin: 0 10px;
 }
+
 .footer-darkblue {
   background-color: #0d1b2a !important;
 }
+
 body {
   background: #ffffff;
   color: #000000;
@@ -137,11 +169,13 @@ body.loaded #loader {
   height: 5rem;
   border-width: 0.5rem;
 }
+
 .booking-section {
   margin-top: -50px;
   position: relative;
   z-index: 10;
 }
+
 .booking-section .form-control,
 .booking-section .form-select {
   border: 1px solid rgba(26, 26, 26, 1);
@@ -154,6 +188,7 @@ body.loaded #loader {
   border: none;
   transition: all 0.3s ease;
 }
+
 .booking-section .btn-warning:hover {
   background-color: rgba(26, 26, 26, 0.8);
   color: rgb(255, 255, 255);
@@ -161,6 +196,31 @@ body.loaded #loader {
   border: none;
   transform: scale(1.05);
 }
+
 .bg-darkblue {
   background-color: darkblue !important;
+}
+
+.banner {
+  background: url("assets/images/Y2_Banner.webp") center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 26, 26, 0.6);
+  z-index: 0;
+}
+
+.banner > * {
+  position: relative;
+  z-index: 1;
 }
