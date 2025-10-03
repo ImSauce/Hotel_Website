@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Y2 Residence Hotel</title>
   <link rel="icon" href="assets/images/Head_Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -219,6 +223,14 @@
   
 </section>
 
+<section class="py-5" id="faq-section">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
+    <div id="faq-list"></div>
+  </div>
+</section>
+
+
   <!-- Footer -->
   <footer class="text-light pt-5 pb-3" style="background-color: #000000">
     <div class="container">
@@ -300,6 +312,36 @@
       window.location.href = url;
     });
   </script>
+
+  
+  <script>
+    $(document).ready(function () {
+      // FAQ data
+      let faqs = [
+        { q: "What time is check-in?", a: "Check-in starts at 2:00 PM." },
+        { q: "Do you allow pets?", a: "Yes, small pets are allowed with prior notice." },
+        { q: "Is breakfast included?", a: "Yes, complimentary breakfast is included in all bookings." },
+        { q: "Do you have Wi-Fi?", a: "Yes, free Wi-Fi is available in all rooms and common areas." }
+      ];
+
+      // Append each FAQ (accordion format: <h3> + <div>)
+      faqs.forEach(faq => {
+        $("#faq-list").append(`
+          <h3>${faq.q}</h3>
+          <div><p>${faq.a}</p></div>
+        `);
+      });
+
+      // Turn faq-list into an accordion
+      $("#faq-list").accordion({
+        collapsible: true,  // all can be closed
+        active: false,      // start with all closed
+        heightStyle: "content", // auto height
+        animate: 200        // animation speed
+      });
+    });
+  </script>
+
 
 </body>
 
